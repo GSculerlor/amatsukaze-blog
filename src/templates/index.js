@@ -16,12 +16,12 @@ const IndexPage = ({ pageContext }) => {
     <Layout>
       <Container>
         <Helmet
-          title="ganen blog"
+          title="blog.ganen.moe"
           htmlAttributes={{ lang: 'en' }}
         >
           <meta
             name="description"
-            content="ganen blog, that's all"
+            content="blog.ganen.moe"
           />
         </Helmet>
         {group.map(({ node }) => (
