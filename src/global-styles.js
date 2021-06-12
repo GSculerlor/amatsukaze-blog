@@ -29,5 +29,52 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
+
+  .gatsby-highlight {
+    margin: 0px -75px;
+    padding: 0;
+
+    pre[class*="language-"] {
+      margin: 0;
+      padding: 25px 75px;
+    }
+
+    code[class*="language-"] {
+      text-shadow: none;
+      color: #f5f2f0;
+    }
+  }
+
+  pre[class*="language-"] {
+    background: #3b3b3b;
+    color: rgb(65, 76, 94);  
+  }
+
+  .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+    background: #3b3b3b;
+  }
+
+  .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted {
+    color: #ce4681;
+  }
+
+  :not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: #3b3b3b;
+  }
+
+  code[class*="language-"] {
+    text-shadow: none;
+    color: #f5f2f0;
+  }
+
+  @media only screen and (max-width: 870px) {
+    .gatsby-highlight {
+      margin: 15px -15px;
+
+      pre[class*="language-"] {
+        padding: 25px;
+      }
+    }
+  }
 `;
 export default GlobalStyle;
