@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import Link from 'gatsby-link';
 
 const Button = styled(Link)`
-  border: 1px solid #bfc8d2;
+  border: 1px solid #959595;
   border-radius: 25px;
-  color: #3e465b;
+  color: #959595;
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
