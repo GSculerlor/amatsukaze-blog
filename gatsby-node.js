@@ -26,7 +26,8 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     title
                     date(formatString: "MMMM D, YYYY")
-                    image
+                    image,
+                    note
                   }
                 }
               }

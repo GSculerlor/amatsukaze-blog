@@ -10,6 +10,7 @@ import Button from '../components/Button';
 import PageNav from '../components/PageNav';
 import PostHeader from '../components/PostHeader'
 import Post from '../components/Post'
+import Note from '../components/Note';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -29,6 +30,10 @@ class BlogPostTemplate extends React.Component {
               content = ""
             />
           </Helmet>
+
+          {post.frontmatter.note && (
+            <Note note={post.frontmatter.note}/>
+          )}
 
           <Card>
             <PostHeader>
@@ -76,7 +81,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        image
+        image,
+        note
       }
     }
   }
