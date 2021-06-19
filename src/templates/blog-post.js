@@ -11,6 +11,7 @@ import PageNav from '../components/PageNav';
 import PostHeader from '../components/PostHeader'
 import Post from '../components/Post'
 import Note from '../components/Note';
+import SEO from '../components/Seo';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,6 +21,10 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout>
+        <SEO
+          title={post.frontmatter.title}
+          description={post.frontmatter.title}
+        />
         <Container>
           <Helmet
             title = {`${post.frontmatter.title} | blog.ganen.moe`}
