@@ -7,7 +7,6 @@ import Layout from './layout';
 import Container from '../components/Container';
 import Pagination from '../components/Pagination';
 import Summary from '../components/Summary';
-import SEO from '../components/Seo';
 
 const IndexPage = ({ pageContext }) => {
   const { group, index, pageCount } = pageContext;
@@ -15,7 +14,6 @@ const IndexPage = ({ pageContext }) => {
   const nextUrl = (index + 1).toString();
   return (
     <Layout>
-      <SEO title="blog.ganen.moe" />
       <Container>
         <Helmet
           title="blog.ganen.moe"
