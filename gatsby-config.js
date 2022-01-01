@@ -48,7 +48,9 @@ module.exports = {
           {
             resolve: "@weknow/gatsby-remark-twitter",
             options: {
-              debug: false
+              debug: false,
+              theme: 'dark',
+
             }
           },
           'gatsby-remark-prismjs',
