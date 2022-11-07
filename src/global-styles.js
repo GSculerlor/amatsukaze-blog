@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #1F282B;
+    background: #272329;
     font-family: Outfit,Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif; 
     line-height: 1.5;
     padding: 80px 0 40px 0;
